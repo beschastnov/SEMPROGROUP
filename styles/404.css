@@ -1,0 +1,28 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: 5%;
+    font-size: 25px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+
+}
+
+.back-btn{
+    border: 1px solid #ffffff;
+    margin-top: 2%;
+    padding: 19px 50px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.back-btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
