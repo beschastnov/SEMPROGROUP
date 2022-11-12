@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 
 export default function Form() {
@@ -59,20 +58,26 @@ export default function Form() {
       <form onSubmit={submit}>
         <div className="inputs-group">
           <div className="input-container">
-            {inputs.name && (
+            {inputs.name ? (
               <div className="plac-text">Ваше имя</div>
+            ) : (
+              <div className="plac-text-none"></div>
             )}
             <input className="input" type="text" name="name" onChange={changeHandler} value={inputs.name} placeholder="Ваше имя" />
           </div>
           <div className="input-container">
-            {inputs.eMail && (
+            {inputs.eMail ? (
             <div className="plac-text">Ваш e-mail</div>
+            ) : (
+              <div className="plac-text-none"></div>
             )}
             <input className="input" type="eMail" name="eMail" onChange={changeHandler} value={inputs.eMail} placeholder="Ваш e-mail" />
           </div>
           <div className="input-container">
-            {inputs.message && (
+            {inputs.message ? (
             <div className="plac-text">Ваше сообщение</div>
+            ) : (
+              <div className="plac-text-none"></div>
             )}
             <input className="input" type="text" name="message" onChange={changeHandler} value={inputs.message} placeholder="Ваше сообщение" />
           </div>
